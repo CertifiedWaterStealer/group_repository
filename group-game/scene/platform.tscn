@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ddhv67eeqhvlr"]
 
-[ext_resource type="PackedScene" uid="uid://gvk3wcjjeuf4" path="res://scene/character_body_2d.tscn" id="1_s0ih4"]
+[ext_resource type="PackedScene" uid="uid://gvk3wcjjeuf4" path="res://scene/enemy.tscn" id="1_s0ih4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ajho"]
 size = Vector2(251, 24)
