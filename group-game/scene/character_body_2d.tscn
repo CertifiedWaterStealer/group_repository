@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://gvk3wcjjeuf4"]
+
+[ext_resource type="Script" uid="uid://28smcd1o3nvg" path="res://scipts/character_body_2d.gd" id="1_snucy"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yjgpo"]
+radius = 7.0
+height = 16.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_snucy"]
+radius = 8.0
+height = 18.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_snucy"]
+radius = 8.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=283718451]
+script = ExtResource("1_snucy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1632716207]
+shape = SubResource("CapsuleShape2D_yjgpo")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=553445]
+offset_left = -7.0
+offset_top = -8.0
+offset_right = 7.0
+offset_bottom = 8.0
+color = Color(0.9267403, 0.47827607, 0.19610372, 1)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1405191981]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=646125846]
+shape = SubResource("CapsuleShape2D_snucy")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1926309124]
+
+[node name="RayCast2D" type="RayCast2D" parent="Node2D" unique_id=440273390]
+position = Vector2(6, 5)
+target_position = Vector2(31, 6)
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=751457732]
+position = Vector2(-17, 3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=2141997783]
+position = Vector2(17, -3)
+shape = SubResource("CircleShape2D_snucy")
