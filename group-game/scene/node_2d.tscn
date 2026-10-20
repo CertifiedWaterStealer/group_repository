@@ -6,6 +6,11 @@ size = Vector2(2, 3932)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vicex"]
 size = Vector2(1152, 4)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8bala"]
+size = Vector2(3, 3908.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_drhme"]
+
 [node name="Level 1" type="Node2D" unique_id=1763686087]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1280243601]
@@ -29,3 +34,26 @@ offset_bottom = 648.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect2/Area2D" unique_id=1484153719]
 position = Vector2(576, 2)
 shape = SubResource("RectangleShape2D_vicex")
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=1730825072]
+offset_left = 1149.0
+offset_top = -3260.0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Area2D" type="Area2D" parent="ColorRect3" unique_id=623401490]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect3/Area2D" unique_id=586734871]
+position = Vector2(1.5, 1953.75)
+shape = SubResource("RectangleShape2D_8bala")
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=2122292183]
+offset_left = 77.0
+offset_top = 542.0
+offset_right = 321.0
+offset_bottom = 582.0
+
+[node name="Area2D" type="Area2D" parent="ColorRect4" unique_id=2093703380]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect4/Area2D" unique_id=1951625911]
+shape = SubResource("RectangleShape2D_drhme")
