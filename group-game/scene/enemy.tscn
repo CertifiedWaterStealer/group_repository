@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bcig3g2wgviro"]
 
-[ext_resource type="Script" uid="uid://cigg8bwxo4875" path="res://script/character_body_2d.gd" id="1_snucy"]
+[ext_resource type="Script" uid="uid://cigg8bwxo4875" path="res://script/player.gd" id="1_snucy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_drhme"]
 radius = 80.0
