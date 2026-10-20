@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dxteqa0fmtlg2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aui74"]
+size = Vector2(2, 3932)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vicex"]
+size = Vector2(1152, 4)
+
+[node name="Level 1" type="Node2D" unique_id=1763686087]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1280243601]
+offset_top = -3284.0
+offset_right = 2.0
+offset_bottom = 648.0
+
+[node name="Area2D" type="Area2D" parent="ColorRect" unique_id=255563759]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Area2D" unique_id=395202108]
+position = Vector2(1, 1966)
+shape = SubResource("RectangleShape2D_aui74")
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=180927402]
+offset_top = 644.0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Area2D" type="Area2D" parent="ColorRect2" unique_id=2119159865]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect2/Area2D" unique_id=1484153719]
+position = Vector2(576, 2)
+shape = SubResource("RectangleShape2D_vicex")
