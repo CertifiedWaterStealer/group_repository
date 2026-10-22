@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bbgodaptakl7"]
+
+[ext_resource type="Script" uid="uid://bfnrqk6mb2yo6" path="res://scipts/spike.gd" id="1_xanym"]
+
+[node name="Area2D" type="Area2D" unique_id=1858255446 groups=["damager"]]
+script = ExtResource("1_xanym")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1947091709]
+position = Vector2(51, -10)
+polygon = PackedVector2Array(-63, 17, -51, -3, -39, 17)
+uv = PackedVector2Array(-141.6, 56.4, -54.399994, -68.399994, 32, 52.4)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=2003328966]
+polygon = PackedVector2Array(0, -13, 12, 7, -12, 7)
+
+[connection signal="body_entered" from="." to="." method="_damage"]
