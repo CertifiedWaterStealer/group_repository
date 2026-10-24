@@ -166,6 +166,10 @@ func _inputting_wall_jump():
 	await get_tree().create_timer(0.2).timeout
 	is_wall_jumping = false
 
+func _take_damage():
+	health -= 1
+	print(health)
+
 # Made to play the animation when the player's 'velocity.x' is not equal to zero, or
 # when the velocity is equal to zero. Fror 'velocity.x' the numbers are oppisite to
 # 'velocity.y'.  

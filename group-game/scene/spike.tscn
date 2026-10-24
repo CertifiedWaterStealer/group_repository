@@ -1,12 +1,15 @@
-[gd_scene format=3 uid="uid://bbgodaptakl7"]
+[gd_scene format=3 uid="uid://bbq4p44a44y7o"]
 
-[node name="Node2D" type="Node2D" unique_id=694500549]
+[ext_resource type="Script" uid="uid://c2c3b5vtj2vkc" path="res://script/spike.gd" id="1_xanym"]
 
-[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1947091709]
-polygon = PackedVector2Array(-128, 49.999992, -51.200012, -73.2, 30.399994, 49.999992)
-uv = PackedVector2Array(-141.6, 56.4, -54.399994, -68.399994, 32, 52.4)
+[sub_resource type="CircleShape2D" id="CircleShape2D_vi0yg"]
+radius = 16.0
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1919979331]
+[node name="Area2D" type="Area2D" unique_id=1843966842]
+script = ExtResource("1_xanym")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=2003328966]
-polygon = PackedVector2Array(-51, -75, 31, 51, -128, 51)
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=969058037]
+polygon = PackedVector2Array(0, -24, -24, 16, 24, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=309829461]
+shape = SubResource("CircleShape2D_vi0yg")

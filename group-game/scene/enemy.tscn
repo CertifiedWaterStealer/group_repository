@@ -1,31 +1,21 @@
-[gd_scene format=3 uid="uid://bcig3g2wgviro"]
+[gd_scene format=3 uid="uid://c82tqsd1ch5nf"]
 
-[ext_resource type="Script" uid="uid://cigg8bwxo4875" path="res://script/player.gd" id="1_snucy"]
+[ext_resource type="Script" uid="uid://28smcd1o3nvg" path="res://script/enemy.gd" id="1_h08p8"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_drhme"]
-radius = 80.0
-height = 336.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6nb4n"]
+radius = 72.0
+height = 304.0
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=366295470]
-script = ExtResource("1_snucy")
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1230555964]
+script = ExtResource("1_h08p8")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=221146047]
-offset_left = -80.0
-offset_top = -168.0
-offset_right = 80.0
-offset_bottom = 168.0
-color = Color(0.26261073, 0.7010259, 0.29116154, 1)
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2083550098]
+offset_left = 216.0
+offset_top = 344.0
+offset_right = 360.0
+offset_bottom = 648.0
+color = Color(0.90372115, 0, 0.09131732, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1219837345]
-shape = SubResource("CapsuleShape2D_drhme")
-
-[node name="Node2D" type="Node2D" parent="." unique_id=1181949174]
-
-[node name="LeftRayCast2D" type="RayCast2D" parent="Node2D" unique_id=222243189]
-target_position = Vector2(-90, 0)
-
-[node name="RightRayCast2D2" type="RayCast2D" parent="Node2D" unique_id=1495771715]
-target_position = Vector2(90, 0)
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=84404357]
-zoom = Vector2(0.5, 0.5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=534721479]
+position = Vector2(288, 496)
+shape = SubResource("CapsuleShape2D_6nb4n")
